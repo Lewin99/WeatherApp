@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BangladeshFragment"
+    android:background="@drawable/backblur">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView_mapicon"
+                android:padding="3dp"
+                android:layout_marginRight="45dp"
+                android:src="@drawable/mapsicon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+
+        <!-- First LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:src="@drawable/bangladesh"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                app:shapeAppearanceOverlay="@style/roundedImageView"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BANGLADESH"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+
+        <!-- Second LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:layout_marginTop="25dp"
+            android:padding="10dp"
+            >
+
+            <!-- First TextView -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Textview_day"
+                    android:text=""
+                    android:textSize="16dp"
+                    android:padding="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <!-- First LinearLayout with TextView pair -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/imageView_tempicon1"
+                                android:padding="3dp"
+                                android:src="@drawable/thermometer"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/Textview_maxTempTitle"
+                                android:layout_weight="1"
+                                android:textSize="15dp"
+                                android:text="H:"/>
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/Textview_maxTemp"
+                                android:layout_weight="1"
+                                android:textSize="15dp"
+                                android:text=""/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/imageView_tempicon2"
+                                android:padding="3dp"
+                                android:src="@drawable/thermometer"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/Textview_minTempTtile"
+                                android:layout_weight="1"
+                                android:textSize="15dp"
+                                android:text="L:"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/Textview_minTemp"
+                                android:layout_weight="1"
+                                android:textSize="15dp"
+                                android:text=""/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Second LinearLayout with ImageView -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ImageView_icon"
+                            android:layout_width="82dp"
+                            android:layout_height="69dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Second TextView -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Textview_weatherCondition"
+                    android:text=""
+                    android:textSize="16dp"
+                    android:padding="10dp"/>
+                <!-- Humidity info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imageView_humidityicon"
+                        android:padding="3dp"
+                        android:src="@drawable/humidityicon"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Textview_humidityTitle"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:text="Humidity:"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Textview_humidity"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:text=""/>
+                </LinearLayout>
+
+                <!-- Pressure information -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imageView_presuureicon"
+                        android:padding="3dp"
+                        android:src="@drawable/speedometericon"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Textview_pressureTitle"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:text="pressure:"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Textview_pressure"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:text=""/>
+                </LinearLayout>
+
+                <!-- d information -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imageView_windicon"
+                        android:padding="3dp"
+                        android:src="@drawable/wind"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Textview_windTitle"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:text="Wind:"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Textview_Wind"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:text=""/>
+                </LinearLayout>
+
+                <!-- Visibility information -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imageView_visibilityicon"
+                        android:padding="3dp"
+                        android:src="@drawable/visibility"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Textview_visibilityTitle"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:text="Visibility:"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Textview_visibility"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:text=""/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="70dp"
+            android:background="#1a1a29"
+            android:orientation="horizontal"
+
+            >
+
+
+            <TextView
+                android:id="@+id/textView_2nd_Day_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:linksClickable="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textColorLink="#701a1a29" />
+
+            <TextView
+                android:id="@+id/textView_3rd_day_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:linksClickable="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textColorLink="#701a1a29" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</FrameLayout>

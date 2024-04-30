@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Newyork_3rd_DayFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="10dp"
+        >
+
+        <!-- First TextView -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_marginTop="40dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Textview_day"
+                android:text=""
+                android:textSize="16dp"
+                android:padding="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <!-- First LinearLayout with TextView pair -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:id="@+id/imageView_tempicon1"
+                            android:padding="3dp"
+                            android:src="@drawable/thermometer"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Textview_maxTempTitle"
+                            android:paddingLeft="10dp"
+                            android:textSize="20dp"
+                            android:text="H:"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Textview_maxTemp"
+                            android:paddingLeft="10dp"
+                            android:textSize="20dp"
+                            android:text=""/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:id="@+id/imageView_tempicon2"
+                            android:padding="3dp"
+                            android:src="@drawable/thermometer"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Textview_minTempTtile"
+                            android:paddingLeft="10dp"
+                            android:textSize="20dp"
+                            android:text="L:"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Textview_minTemp"
+                            android:paddingLeft="10dp"
+                            android:textSize="20dp"
+                            android:text=""/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Second LinearLayout with ImageView -->
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <!-- Second TextView -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="40dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Textview_weatherCondition"
+                android:text=""
+                android:textSize="16dp"
+                android:padding="10dp"/>
+            <!-- Humidity info -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/imageView_humidityicon1"
+                    android:padding="3dp"
+                    android:src="@drawable/humidityicon"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Textview_humidityTitle"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text="Humidity:"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Textview_humidity"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text=""/>
+            </LinearLayout>
+
+            <!-- Pressure information -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/imageView_pressureicon1"
+                    android:padding="3dp"
+                    android:src="@drawable/speedometericon"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Textview_pressureTitle"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text="Pressure:"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Textview_pressure"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text=""/>
+            </LinearLayout>
+
+            <!-- d information -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/imageView_windicon1"
+                    android:padding="3dp"
+                    android:src="@drawable/wind"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Textview_windTitle"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text="Wind:"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Textview_Wind"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text=""/>
+            </LinearLayout>
+
+            <!-- Visibility information -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/imageView_visibilityicon1"
+                    android:padding="3dp"
+                    android:src="@drawable/visibility"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Textview_visibilityTitle"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text="Visibility:"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Textview_visibility"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
